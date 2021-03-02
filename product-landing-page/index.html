@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- custom css -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- font awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+      integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header id="header">
+      <img
+        src="https://s3.amazonaws.com/freecodecamp/original_trombones.png"
+        alt=""
+        id="header-img"
+      />
+      <nav id="nav-bar">
+        <ul id="nav-links">
+          <li><a class="nav-link" href="#features">Features</a></li>
+          <li><a class="nav-link" href="#how-it-works">How it Works</a></li>
+          <li><a class="nav-link" href="">Pricing</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container"></div>
+    <section class="email-form" id="hero">
+      <p id="email-form-info">Handcrafted, home-made masterpieces</p>
+      <form action="https://www.freecodecamp.com/email-submit" id="form">
+        <input
+          type="email"
+          name="email"
+          id="email"
+          required
+          pattern="[a-zA-Z0-9]*@[a-z]*.com"
+          placeholder="Enter your email"
+          autocomplete="off"
+        />
+        <input type="submit" value="Get Started" id="submit" />
+      </form>
+    </section>
+    <section id="features">
+      <div class="grid">
+        <div id="icon"><i class="fas fa-fire fa-3x fa-orange"></i></div>
+        <div class="desc">
+          <h4 class="desc-title">Premium Materials</h4>
+          <p class="desc-content">
+            Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.
+          </p>
+        </div>
+      </div>
+      <div class="grid">
+        <div id="icon"><i class="fas fa-truck fa-3x fa-orange"></i></div>
+        <div class="desc">
+          <h4 class="desc-title">Fast Shipping</h4>
+          <p class="desc-content">
+            We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="video" id="how-it-works">
+      <iframe
+        id="video"
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/y8Yv4pnO7qc"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </section>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>

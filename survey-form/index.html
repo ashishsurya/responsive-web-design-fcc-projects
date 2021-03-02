@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="header">
+      <h1 id="title">Survey Form</h1>
+      <p id="description">A Short Survey, thankyou for spending you time</p>
+    </div>
+    <form id="survey-form">
+      <div class="name">
+        <label id="name-label" for="name">
+          Name :
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your Name"
+            required
+          />
+        </label>
+      </div>
+      <div  class="email">
+        <label id="email-label" for="email">
+          Email :
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your Email"
+            pattern="*@*.com"
+            required
+          />
+        </label>
+      </div>
+      <div  class="age">
+        <label id="number-label" for="number"
+          >Age :
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="10"
+            max="105"
+            placeholder="Your age"
+          />
+        </label>
+      </div>
+      <div class="dropdown-menu">
+        <label for="dropdown">
+          Which option best describes your current role?
+          <select name="dropdown" id="dropdown">
+            <option selected hidden value="Select Current Role" disabled>
+              Select Current Role
+            </option>
+            <option value="Student">Student</option>
+            <option value="Full Time Job">Full Time Job</option>
+            <option value="Full Time Learner">Full Time Learner</option>
+            <option value="Prefer Not to say">Prefer Not to say</option>
+            <option value="Other">Other</option>
+          </select>
+        </label>
+      </div>
+      <div class="radio-buttons">
+        <p class="radio-info">Would you recommend freeCodeCamp to a friend?</p>
+        <label for="definitely">
+          <input
+            type="radio"
+            name="recomendation"
+            id="definitely"
+            value="definitely"
+          />
+          Definitly
+        </label>
+        <br />
+        <label for="maybe">
+          <input type="radio" name="recomendation" id="maybe" value="maybe" />
+          Maybe
+        </label>
+        <br />
+        <label for="notsure">
+          <input
+            type="radio"
+            name="recomendation"
+            id="notsure"
+            value="notsure"
+          />
+          Not Sure
+        </label>
+      </div>
+      <div class="checkboxes">
+        <p class="checkbox-info">
+          What would you like to see improved? (Check all that apply)
+        </p>
+        <label for="front-end-projects">
+          <input
+            type="checkbox"
+            name="improvement"
+            id="front-end-projects"
+            value="front-end-projects"
+          />
+          Front-end Projects
+        </label>
+        <br />
+        <label for="back-end-projects">
+          <input
+            type="checkbox"
+            name="improvement"
+            id="back-end-projects"
+            value="back-end-projects"
+          />
+          Back-end Projects
+        </label>
+        <br />
+        <label for="data-visualization">
+          <input
+            type="checkbox"
+            name="improvement"
+            id="data-visualization"
+            value="data-visualization "
+          />
+          Data Visualization
+        </label>
+        <br />
+        <label for="open-source">
+          <input
+            type="checkbox"
+            name="improvement"
+            id="open-source"
+            value="open-source"
+          />
+          Open Source Community
+        </label>
+        <br />
+      </div>
+      <div class="com-suggestions">
+        <label for="com-sugg">
+          Any comments or suggestions?
+          <textarea
+            name="com-sugg"
+            id="com-sugg"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </label>
+      </div>
+      <button type="submit" id="submit">Submit</button>
+    </form>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
